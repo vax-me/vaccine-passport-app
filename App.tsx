@@ -7,10 +7,10 @@
  */
 
 import React from 'react';
-import { PassportRequestView } from "./views/PassportRequestView";
 import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
-import SplashScreen from "./views/SplashScreen";
+import SplashScreenView from "./views/SplashScreenView";
+import RequestPassportView from "./views/RequestPassportView";
 
 
 const Stack = createStackNavigator();
@@ -21,12 +21,12 @@ const App = () => {
           <Stack.Navigator>
             <Stack.Screen
               name={"Splash"}
-              component={SplashScreen}
+              component={SplashScreenView}
             >
 
             </Stack.Screen>
             <Stack.Screen name={"RequestPassport"}
-                          component={PassportRequestView}>
+                          component={RequestPassportView}>
 
             </Stack.Screen>
           </Stack.Navigator>

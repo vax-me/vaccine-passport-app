@@ -3,7 +3,7 @@ import { Colors } from "react-native/Libraries/NewAppScreen";
 import Section from "../components/Section";
 import React, { Component } from "react";
 
-const SplashScreen: Component = ({navigation}) => {
+const SplashScreenView: Component = ({navigation}) => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
@@ -24,7 +24,7 @@ const SplashScreen: Component = ({navigation}) => {
             <Text>
               Go To Requesting New Passport
             </Text>
-            <Button title={"GoTo"} onPress={() => navigation.navigate("PassportRequest")} />
+            <Button title={"GoTo"} onPress={() => navigation.navigate("RequestPassport")} />
           </Section>
           <Section title="Refreshing Passport">
             <Text>
@@ -37,4 +37,4 @@ const SplashScreen: Component = ({navigation}) => {
   );
 }
 
-export default SplashScreen;
+export default SplashScreenView;
