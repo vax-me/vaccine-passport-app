@@ -1,14 +1,30 @@
 import { Button, SafeAreaView, ScrollView, StatusBar, Text, useColorScheme, View } from "react-native";
 import { Colors } from "react-native/Libraries/NewAppScreen";
 import Section from "../components/Section";
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
+import { Storage, StorageKeys } from "../features/storage/storage";
 
-const SplashScreenView: Component = ({navigation}) => {
+const QRCodeView: Component = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
   const backgroundStyle = {
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
+
+  const [passport, setPassport] = useState('');
+
+  useEffect(() => {
+    // You need to restrict it at some point
+    // This is just dummy code and should be replaced by actual
+    if (!passport) {
+      getPassport();
+    }
+  }, []);
+  const getPassport = async () => {
+    const passportString = await Storage.getItem(StorageKeys.PASSPORT);
+    if (passportString != null)
+      setPassport(JSON.parse(passportString));
+  }
 
   return (
     <SafeAreaView style={backgroundStyle}>
@@ -20,22 +36,14 @@ const SplashScreenView: Component = ({navigation}) => {
           style={{
             backgroundColor: isDarkMode ? Colors.black : Colors.white,
           }}>
-          <Section title="Vaccine Passport">
-            <Text>
-              Go To Requesting New Passport
-            </Text>
-            <Button title={"Go to requesting passport"} onPress={() => navigation.navigate("RequestPassport")} />
-          </Section>
-          <Section title="Refreshing Passport">
-            <Text>
-              Requesting a new Passport.
-            </Text>
-            <Button title={"Go to QRCode"} onPress={() => navigation.navigate("QRCode")} />
-          </Section>
+          <Text>
+            Show QR Code here
+            Passport: {passport}
+          </Text>
         </View>
       </ScrollView>
     </SafeAreaView>
   );
 }
 
-export default SplashScreenView;
+export default QRCodeView;

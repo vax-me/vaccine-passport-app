@@ -994,6 +994,13 @@
     "@nodelib/fs.scandir" "2.1.4"
     fastq "^1.6.0"
 
+"@react-native-community/async-storage@^1.12.1":
+  version "1.12.1"
+  resolved "https://registry.yarnpkg.com/@react-native-community/async-storage/-/async-storage-1.12.1.tgz#25f821b4f6b13abe005ad67e47c6f1cee9f27b24"
+  integrity sha512-70WGaH3PKYASi4BThuEEKMkyAgE9k7VytBqmgPRx3MzJx9/MkspwqJGmn3QLCgHLIFUgF1pit2mWICbRJ3T3lg==
+  dependencies:
+    deep-assign "^3.0.0"
+
 "@react-native-community/cli-debugger-ui@^5.0.1-alpha.1":
   version "5.0.1-alpha.1"
   resolved "https://registry.yarnpkg.com/@react-native-community/cli-debugger-ui/-/cli-debugger-ui-5.0.1-alpha.1.tgz#09a856ccd2954cf16eea59b14dd26ae66720e4e6"
@@ -1940,7 +1947,7 @@ balanced-match@^1.0.0:
   resolved "https://registry.yarnpkg.com/balanced-match/-/balanced-match-1.0.2.tgz#e83e3a7e3f300b34cb9d87f615fa0cbf357690ee"
   integrity sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw==
 
-base64-js@^1.1.2, base64-js@^1.5.1:
+base64-js@^1.1.2, base64-js@^1.3.0, base64-js@^1.5.1:
   version "1.5.1"
   resolved "https://registry.yarnpkg.com/base64-js/-/base64-js-1.5.1.tgz#1b1b440160a5bf7ad40b650f095963481903930a"
   integrity sha512-AKpaYlHn8t4SVbOHCy+b5+KKgvR4vrsD8vbvrbiQJps7fKDTkjkDry6ji0rUJjC0kzbNePLwzxq8iypo41qeWA==
@@ -2471,6 +2478,13 @@ decode-uri-component@^0.2.0:
   version "0.2.0"
   resolved "https://registry.yarnpkg.com/decode-uri-component/-/decode-uri-component-0.2.0.tgz#eb3913333458775cb84cd1a1fae062106bb87545"
   integrity sha1-6zkTMzRYd1y4TNGh+uBiEGu4dUU=
+
+deep-assign@^3.0.0:
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/deep-assign/-/deep-assign-3.0.0.tgz#c8e4c4d401cba25550a2f0f486a2e75bc5f219a2"
+  integrity sha512-YX2i9XjJ7h5q/aQ/IM9PEwEnDqETAIYbggmdDB3HLTlSgo1CxPsj6pvhPG68rq6SVE0+p+6Ywsm5fTYNrYtBWw==
+  dependencies:
+    is-obj "^1.0.0"
 
 deep-is@^0.1.3, deep-is@~0.1.3:
   version "0.1.3"
@@ -3539,6 +3553,11 @@ hermes-profile-transformer@^0.0.6:
   dependencies:
     source-map "^0.7.3"
 
+hex-lite@^1.5.0:
+  version "1.5.0"
+  resolved "https://registry.yarnpkg.com/hex-lite/-/hex-lite-1.5.0.tgz#482db64f673dcacdb8be93c629a799ce5a76b24d"
+  integrity sha512-bXFMCFoKcksmJ1kDRq6B0+Go5Wgq84Dq/3rX99+0OzBQZKUBEMLguPd1lZSpvmzJACb516n07eyswF4KHAF9cg==
+
 hoist-non-react-statics@^3.3.0:
   version "3.3.2"
   resolved "https://registry.yarnpkg.com/hoist-non-react-statics/-/hoist-non-react-statics-3.3.2.tgz#ece0acaf71d62c2969c2ec59feff42a4b1a85b45"
@@ -3845,6 +3864,11 @@ is-number@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/is-number/-/is-number-7.0.0.tgz#7535345b896734d5f80c4d06c50955527a14f12b"
   integrity sha512-41Cifkg6e8TylSpdtTpeLVMqvSBEVzTttHvERD741+pnZ8ANv0004MRL43QKPDlK9cGvNp6NZWZUBlbGXYxxng==
+
+is-obj@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/is-obj/-/is-obj-1.0.1.tgz#3e4729ac1f5fde025cd7d83a896dab9f4f67db0f"
+  integrity sha1-PkcprB9f3gJc19g6iW2rn09n2w8=
 
 is-plain-object@^2.0.3, is-plain-object@^2.0.4:
   version "2.0.4"
@@ -5856,6 +5880,14 @@ react-native-screens@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/react-native-screens/-/react-native-screens-3.1.0.tgz#3b516528b54ab8108bf230197fa6e65c7c4a062a"
   integrity sha512-2nCwfminzGfM61Py4PID5hJVV4zGhbYD6TIv16Xj6M0MMNWr9esqIlI94NymY7B12SToXMb5duKU/IR5iBCykg==
+
+react-native-simple-crypto@^0.2.15:
+  version "0.2.15"
+  resolved "https://registry.yarnpkg.com/react-native-simple-crypto/-/react-native-simple-crypto-0.2.15.tgz#a665659c58a153e9a32d507c30f327e3c5bdf0e2"
+  integrity sha512-Mc0PgbCyvySOvq2BEVFelOrU0WPlju49ufnwMbL1Ss8aIXLZ52oXfvVWy47yxtrPuOxcxiGi3qMjJt5mKD1hOA==
+  dependencies:
+    base64-js "^1.3.0"
+    hex-lite "^1.5.0"
 
 react-native@0.64.0:
   version "0.64.0"

@@ -3,26 +3,26 @@ import { BASE_URL, GET_PASSPORT, REQ_PASSPORT, RET_PASSPORT, SIGN_PASSPORT } fro
 import { Passport, PassportID, RequestPassportRequest, SignPassportRequest } from "./passport-model";
 
 
-class PassportService {
-  private instance: PassportService | null;
+export class PassportService {
+  private static instance: PassportService | null = null;
 
   private constructor() {
-    this.instance = null;
   }
 
-  getInstance(): PassportService {
-    if (this.instance == null) {
-      this.instance = new PassportService();
+  static getInstance(): PassportService {
+    if (PassportService.instance == null) {
+      PassportService.instance = new PassportService();
     }
-    return this.instance
+    return PassportService.instance
   }
 
-  async requestPassport(request: RequestPassportRequest) {
+  async requestPassport(request: RequestPassportRequest): Promise<PassportID> {
     try {
       const response = await axios.post(BASE_URL + REQ_PASSPORT, request)
-      console.log(response)
+      return response.data.id;
     } catch (error) {
       console.error(error)
+      return "";
     }
   }
 

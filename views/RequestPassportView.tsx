@@ -1,13 +1,28 @@
 import React from "react";
 import { Button, SafeAreaView, ScrollView, Text, TextInput } from "react-native";
 import { Controller, useForm } from "react-hook-form";
+import EncryptionService from "../features/encryption/key";
+import { PassportService } from "../features/passport/passport-service";
+import { RequestPassportRequest } from "../features/passport/passport-model";
+import { Storage, StorageKeys } from "../features/storage/storage";
+
+
+const onSubmit = async (data: any) => {
+  const keypair = await EncryptionService.generateKey()
+  const service = PassportService.getInstance();
+  const request: RequestPassportRequest = {
+    first_name: data.first_name, last_name: data.last_name, public_key: keypair.public
+  }
+  const passport = await service.requestPassport(request)
+  await Storage.setItem(StorageKeys.PASSPORT, passport);
+  await Storage.setItem(StorageKeys.PUBLIC_KEY, keypair.public);
+  await Storage.setItem(StorageKeys.PRIVATE_KEY, keypair.private);
+}
 
 export const RequestPassportView = () => {
   const { control, handleSubmit, formState: { errors } } = useForm();
-  const onSubmit = (data: any) => console.log(data);
 
   return <SafeAreaView>
-    <ScrollView>
       <Controller
         control={control}
         render={({ field: { onChange, onBlur, value } }) => (
@@ -37,7 +52,6 @@ export const RequestPassportView = () => {
       />
 
       <Button title="Submit" onPress={handleSubmit(onSubmit)} />
-    </ScrollView>
   </SafeAreaView>
 }
 

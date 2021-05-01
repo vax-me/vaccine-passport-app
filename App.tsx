@@ -11,6 +11,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import SplashScreenView from "./views/SplashScreenView";
 import RequestPassportView from "./views/RequestPassportView";
+import QRCodeView from "./views/QRCodeView";
 
 
 const Stack = createStackNavigator();
@@ -27,6 +28,10 @@ const App = () => {
             </Stack.Screen>
             <Stack.Screen name={"RequestPassport"}
                           component={RequestPassportView}>
+
+            </Stack.Screen>
+            <Stack.Screen name={"QRCode"}
+                          component={QRCodeView}>
 
             </Stack.Screen>
           </Stack.Navigator>
