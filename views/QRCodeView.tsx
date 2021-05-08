@@ -1,21 +1,14 @@
-import { Button, SafeAreaView, ScrollView, StatusBar, Text, useColorScheme, View } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
-import Section from "../components/Section";
 import React, { Component, useEffect, useState } from "react";
 import { Storage, StorageKeys } from "../features/storage/storage";
+import CustomHeader from "../components/Header";
+import { Container, Content, Text } from "native-base";
+import { PassportDetail } from "../components/PassportDetail";
+import QRCode from 'react-native-qrcode-svg';
 
 const QRCodeView: Component = () => {
-  const isDarkMode = useColorScheme() === 'dark';
-
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
-
-  const [passport, setPassport] = useState('');
+  const [passport, setPassport] = useState(undefined);
 
   useEffect(() => {
-    // You need to restrict it at some point
-    // This is just dummy code and should be replaced by actual
     if (!passport) {
       getPassport();
     }
@@ -26,23 +19,20 @@ const QRCodeView: Component = () => {
       setPassport(JSON.parse(passportString));
   }
 
+  if (!passport) {
+    return <Container>
+      <Text>Loading</Text>
+    </Container>
+  }
+
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Text>
-            Show QR Code here
-            Passport: {passport}
-          </Text>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <Container>
+      <CustomHeader />
+      <Content padder>
+        <PassportDetail passport={passport} />
+        <QRCode value={JSON.stringify(passport)} />
+      </Content>
+    </Container>
   );
 }
 

@@ -12,6 +12,10 @@ target 'vaccinepassport' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-simple-crypto', :path => '../node_modules/react-native-simple-crypto'
+
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'vaccinepassportTests' do
     inherit! :complete
     # Pods for testing

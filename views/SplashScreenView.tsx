@@ -1,40 +1,38 @@
-import { Button, SafeAreaView, ScrollView, StatusBar, Text, useColorScheme, View } from "react-native";
-import { Colors } from "react-native/Libraries/NewAppScreen";
-import Section from "../components/Section";
-import React, { Component } from "react";
+import React, { useState } from "react";
+import { Accordion, Button, Container, Content, Header, List, ListItem, Text } from "native-base";
+import CustomHeader from "../components/Header";
 
-const SplashScreenView: Component = ({navigation}) => {
-  const isDarkMode = useColorScheme() === 'dark';
+const passports = [{
+  title: "COVIDPfizer1",
+  content: "Content"
+},{
+  title: "COVIDPfizer2",
+  content: "Content"
+}, {
+  title: "GSK Tetanus",
+  content: "Content"
+}]
 
-  const backgroundStyle = {
-    backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
-  };
 
+const SplashScreenView = ({navigation}: any) => {
+  const items = passports.map((pass) => (
+    <ListItem key={pass.title}>
+      <Text>
+      {pass.title}
+      </Text>
+    </ListItem>))
   return (
-    <SafeAreaView style={backgroundStyle}>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <ScrollView
-        contentInsetAdjustmentBehavior="automatic"
-        style={backgroundStyle}>
-        <View
-          style={{
-            backgroundColor: isDarkMode ? Colors.black : Colors.white,
-          }}>
-          <Section title="Vaccine Passport">
-            <Text>
-              Go To Requesting New Passport
-            </Text>
-            <Button title={"Go to requesting passport"} onPress={() => navigation.navigate("RequestPassport")} />
-          </Section>
-          <Section title="Refreshing Passport">
-            <Text>
-              Requesting a new Passport.
-            </Text>
-            <Button title={"Go to QRCode"} onPress={() => navigation.navigate("QRCode")} />
-          </Section>
-        </View>
-      </ScrollView>
-    </SafeAreaView>
+    <Container>
+      <CustomHeader />
+      <Content padder>
+        <List>
+          {items}
+        </List>
+        <Button full onPress={() => navigation.navigate("RequestPassport")}>
+          <Text>Add Passport</Text>
+        </Button>
+      </Content>
+    </Container>
   );
 }
 
