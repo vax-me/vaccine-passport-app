@@ -13,6 +13,8 @@ import SplashScreenView from "./views/SplashScreenView";
 import { NavigationContainer } from "@react-navigation/native";
 import RequestPassportView from "./views/RequestPassportView";
 import QRCodeView from "./views/QRCodeView";
+import { Passport } from "./features/passport/passport-model";
+import { Storage } from "./features/storage/storage";
 
 
 const Stack = createStackNavigator();
@@ -27,7 +29,22 @@ function sleep(ms: number) {
 
 
 const loadDependencies = async() => {
-  await sleep(1000);
+  const debugPassport: Passport = {
+    private_key: "",
+    birthday: {
+      day: 10,
+      month: 1,
+      year: 2001
+    },
+    dose_no: 1,
+    name: "Test",
+    id: "DEBUG_ID",
+    lot_no: "134A",
+    manufacturer: "Fitzer Safe",
+    public_key: "PUBKEY",
+    type: "Anti Chip"
+  }
+  Storage.addPassport(debugPassport);
 }
 
 

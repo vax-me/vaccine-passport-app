@@ -8,16 +8,19 @@ export interface Birthday {
   year: number;
 }
 
-export interface Passport {
+export  interface RequestedPassport {
   id: PassportID;
-  type: VaccineType;
-  manufacturer: Manufacturer;
-  dose_no: number;
-  lot_no: string;
   name: string;
   public_key: PublicKey;
   private_key: PrivateKey;
   birthday: Birthday;
+}
+
+export interface Passport extends RequestedPassport {
+  type: VaccineType;
+  manufacturer: Manufacturer;
+  dose_no: number;
+  lot_no: string;
 }
 
 export type PublicKey = string;

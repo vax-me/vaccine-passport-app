@@ -1,35 +1,30 @@
 //./storage.js
 import AsyncStorage from "@react-native-community/async-storage";
-import { Passport, PassportID } from "../passport/passport-model";
+import { Passport, PassportID, RequestedPassport } from "../passport/passport-model";
 
-
-const debugPassport: Passport = {
-  private_key: "",
-  birthday: {
-    day: 10,
-    month: 1,
-    year: 2001
-  },
-  dose_no: 1,
-  name: "Test",
-  id: "DEBUG_ID",
-  lot_no: "134A",
-  manufacturer: "Fitzer Safe",
-  public_key: "PUBKEY",
-  type: "Anti Chip"
-}
 
 export class Storage {
+  private static PASSPORT_PREFIX = "PASSPORT";
+  private static REQUESTED_PASSPORT_PREFIX = "REQUESTED_PASSPORT";
+
+  static addRequestedPassport = async (passport: RequestedPassport) => {
+    await AsyncStorage.setItem(Storage.REQUESTED_PASSPORT_PREFIX + passport.id, JSON.stringify(passport))
+  }
+
+  static getRequestedPassport = async (id: PassportID): Promise<RequestedPassport> => {
+    const passportString = await AsyncStorage.getItem(Storage.REQUESTED_PASSPORT_PREFIX + id);
+    if (passportString == null) {
+      throw Error("No passport with specified id ${id}.")
+    }
+    return JSON.parse(passportString);
+  }
 
   static addPassport = async (passport: Passport) => {
-    await AsyncStorage.setItem(passport.id, JSON.stringify(passport))
+    await AsyncStorage.setItem(Storage.PASSPORT_PREFIX + passport.id, JSON.stringify(passport))
   }
 
   static getPassport = async (id: PassportID): Promise<Passport> => {
-    if (id == "DEBUG_ID") {
-      return debugPassport
-    }
-    const passportString = await AsyncStorage.getItem(id);
+    const passportString = await AsyncStorage.getItem(Storage.PASSPORT_PREFIX + id);
     if (passportString == null) {
       throw Error("No passport with specified id ${id}.")
     }
