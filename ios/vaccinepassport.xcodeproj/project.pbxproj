@@ -8,29 +8,31 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* vaccinepassportTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* vaccinepassportTests.m */; };
+		0601D70CDB78407CBE078851 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A422DB44D54773B0EF4592 /* SimpleLineIcons.ttf */; };
+		06723C7150CBB1BDF6EC4B00 /* libPods-vaccinepassport.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FE962C0C10EE68313817C565 /* libPods-vaccinepassport.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		ABB59D51DD9E4DB2A08F90B8 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 905E2E21AB104FC0AB82EACD /* AntDesign.ttf */; };
-		5E0715A949CE455487F73799 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D1C3956F194D0E898B8EF9 /* Entypo.ttf */; };
+		1A27A4642643416ABA89203D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE1C10C2FD148C79D5B1D58 /* Zocial.ttf */; };
 		1D011F780201475CBF4E545C /* EvilIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C6E0974BE1F94B9F8120A910 /* EvilIcons.ttf */; };
-		6201A360D91F402293C417D5 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A71682B42E56490AAEFCE114 /* Feather.ttf */; };
-		5EC8144FD49045EC9958AFA1 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614D928F72824FF892EAA7E2 /* FontAwesome.ttf */; };
-		3CECDCEFA19840D187E864D0 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10C4D2711D6646E18D6EA861 /* FontAwesome5_Brands.ttf */; };
-		CD8B5DA1E0294A0483718A3B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B53E95C7274E49D998296CFE /* FontAwesome5_Regular.ttf */; };
-		C4E97B96EF8C444F9EFD6F38 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4A3A66A014C888E7F87E9 /* FontAwesome5_Solid.ttf */; };
-		DEA59B1B8EFE4164A1ED8FAB /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD8351C15069473CAB59E8D6 /* Fontisto.ttf */; };
-		BFB3E099BA184EA2867C2B92 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F79044EE4B1456FAEFE3043 /* Foundation.ttf */; };
-		756997E49CA7423E91E513FD /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8869F29ED6EB4B99BA519E24 /* Ionicons.ttf */; };
 		2EC87A726CDC419FB73EB627 /* MaterialCommunityIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2128FB5876354BF6A4944655 /* MaterialCommunityIcons.ttf */; };
 		3CEA51CEC57442F58D6C4800 /* MaterialIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 91117EBF250843B0B176B563 /* MaterialIcons.ttf */; };
-		FA6D6B70712F47CAB76CE08F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E60EFA8EB4684631BA2AE080 /* Octicons.ttf */; };
-		5F0D529704E34686B0E32D83 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84AE777393D441F78A1CCD59 /* Roboto_medium.ttf */; };
-		814C92076FF845289280E2B6 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739C8103A3344D43A0236FD5 /* Roboto.ttf */; };
+		3CECDCEFA19840D187E864D0 /* FontAwesome5_Brands.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 10C4D2711D6646E18D6EA861 /* FontAwesome5_Brands.ttf */; };
 		48E068A94CDD4B2995093FA8 /* rubicon-icon-font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 6050D1FB8AD44A4C89BA5319 /* rubicon-icon-font.ttf */; };
-		0601D70CDB78407CBE078851 /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 63A422DB44D54773B0EF4592 /* SimpleLineIcons.ttf */; };
-		1A27A4642643416ABA89203D /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BEE1C10C2FD148C79D5B1D58 /* Zocial.ttf */; };
+		5E0715A949CE455487F73799 /* Entypo.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 39D1C3956F194D0E898B8EF9 /* Entypo.ttf */; };
+		5EC8144FD49045EC9958AFA1 /* FontAwesome.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 614D928F72824FF892EAA7E2 /* FontAwesome.ttf */; };
+		5F0D529704E34686B0E32D83 /* Roboto_medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 84AE777393D441F78A1CCD59 /* Roboto_medium.ttf */; };
+		6201A360D91F402293C417D5 /* Feather.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A71682B42E56490AAEFCE114 /* Feather.ttf */; };
+		756997E49CA7423E91E513FD /* Ionicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8869F29ED6EB4B99BA519E24 /* Ionicons.ttf */; };
+		814C92076FF845289280E2B6 /* Roboto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 739C8103A3344D43A0236FD5 /* Roboto.ttf */; };
+		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		ABB59D51DD9E4DB2A08F90B8 /* AntDesign.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 905E2E21AB104FC0AB82EACD /* AntDesign.ttf */; };
+		B0C5C6A53E832ED63BC7AC1B /* libPods-vaccinepassport-vaccinepassportTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2B821E1DEF9034419F26144C /* libPods-vaccinepassport-vaccinepassportTests.a */; };
+		BFB3E099BA184EA2867C2B92 /* Foundation.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4F79044EE4B1456FAEFE3043 /* Foundation.ttf */; };
+		C4E97B96EF8C444F9EFD6F38 /* FontAwesome5_Solid.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9CA4A3A66A014C888E7F87E9 /* FontAwesome5_Solid.ttf */; };
+		CD8B5DA1E0294A0483718A3B /* FontAwesome5_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B53E95C7274E49D998296CFE /* FontAwesome5_Regular.ttf */; };
+		DEA59B1B8EFE4164A1ED8FAB /* Fontisto.ttf in Resources */ = {isa = PBXBuildFile; fileRef = FD8351C15069473CAB59E8D6 /* Fontisto.ttf */; };
+		FA6D6B70712F47CAB76CE08F /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E60EFA8EB4684631BA2AE080 /* Octicons.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,33 +49,39 @@
 		00E356EE1AD99517003FC87E /* vaccinepassportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = vaccinepassportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* vaccinepassportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = vaccinepassportTests.m; sourceTree = "<group>"; };
+		10C4D2711D6646E18D6EA861 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Brands.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* vaccinepassport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = vaccinepassport.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = vaccinepassport/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = vaccinepassport/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = vaccinepassport/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = vaccinepassport/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = vaccinepassport/main.m; sourceTree = "<group>"; };
+		2128FB5876354BF6A4944655 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialCommunityIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; };
+		2B821E1DEF9034419F26144C /* libPods-vaccinepassport-vaccinepassportTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vaccinepassport-vaccinepassportTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		39D1C3956F194D0E898B8EF9 /* Entypo.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Entypo.ttf; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; };
+		4F79044EE4B1456FAEFE3043 /* Foundation.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Foundation.ttf; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; };
+		6050D1FB8AD44A4C89BA5319 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; };
+		614D928F72824FF892EAA7E2 /* FontAwesome.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome.ttf; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; };
+		63A422DB44D54773B0EF4592 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = SimpleLineIcons.ttf; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; };
+		65F3894E73589FC8178F2B35 /* Pods-vaccinepassport-vaccinepassportTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaccinepassport-vaccinepassportTests.debug.xcconfig"; path = "Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests.debug.xcconfig"; sourceTree = "<group>"; };
+		739C8103A3344D43A0236FD5 /* Roboto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto.ttf; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = vaccinepassport/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		84AE777393D441F78A1CCD59 /* Roboto_medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Roboto_medium.ttf; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; };
+		8869F29ED6EB4B99BA519E24 /* Ionicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Ionicons.ttf; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; };
+		905E2E21AB104FC0AB82EACD /* AntDesign.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = AntDesign.ttf; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; };
+		91117EBF250843B0B176B563 /* MaterialIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = MaterialIcons.ttf; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; };
+		97B43D375C646C895B90C29E /* Pods-vaccinepassport-vaccinepassportTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaccinepassport-vaccinepassportTests.release.xcconfig"; path = "Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests.release.xcconfig"; sourceTree = "<group>"; };
+		9CA4A3A66A014C888E7F87E9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Solid.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; };
+		A71682B42E56490AAEFCE114 /* Feather.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Feather.ttf; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; };
+		B53E95C7274E49D998296CFE /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = FontAwesome5_Regular.ttf; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; };
+		BD420DF473C530F4783A1DD6 /* Pods-vaccinepassport.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaccinepassport.release.xcconfig"; path = "Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport.release.xcconfig"; sourceTree = "<group>"; };
+		BEE1C10C2FD148C79D5B1D58 /* Zocial.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Zocial.ttf; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; };
+		C6E0974BE1F94B9F8120A910 /* EvilIcons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = EvilIcons.ttf; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; };
+		D13B7050EAA0B43539B85B49 /* Pods-vaccinepassport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-vaccinepassport.debug.xcconfig"; path = "Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport.debug.xcconfig"; sourceTree = "<group>"; };
+		E60EFA8EB4684631BA2AE080 /* Octicons.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Octicons.ttf; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		905E2E21AB104FC0AB82EACD /* AntDesign.ttf */ = {isa = PBXFileReference; name = "AntDesign.ttf"; path = "../node_modules/native-base/Fonts/AntDesign.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		39D1C3956F194D0E898B8EF9 /* Entypo.ttf */ = {isa = PBXFileReference; name = "Entypo.ttf"; path = "../node_modules/native-base/Fonts/Entypo.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		C6E0974BE1F94B9F8120A910 /* EvilIcons.ttf */ = {isa = PBXFileReference; name = "EvilIcons.ttf"; path = "../node_modules/native-base/Fonts/EvilIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A71682B42E56490AAEFCE114 /* Feather.ttf */ = {isa = PBXFileReference; name = "Feather.ttf"; path = "../node_modules/native-base/Fonts/Feather.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		614D928F72824FF892EAA7E2 /* FontAwesome.ttf */ = {isa = PBXFileReference; name = "FontAwesome.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		10C4D2711D6646E18D6EA861 /* FontAwesome5_Brands.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Brands.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Brands.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		B53E95C7274E49D998296CFE /* FontAwesome5_Regular.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Regular.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		9CA4A3A66A014C888E7F87E9 /* FontAwesome5_Solid.ttf */ = {isa = PBXFileReference; name = "FontAwesome5_Solid.ttf"; path = "../node_modules/native-base/Fonts/FontAwesome5_Solid.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		FD8351C15069473CAB59E8D6 /* Fontisto.ttf */ = {isa = PBXFileReference; name = "Fontisto.ttf"; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		4F79044EE4B1456FAEFE3043 /* Foundation.ttf */ = {isa = PBXFileReference; name = "Foundation.ttf"; path = "../node_modules/native-base/Fonts/Foundation.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8869F29ED6EB4B99BA519E24 /* Ionicons.ttf */ = {isa = PBXFileReference; name = "Ionicons.ttf"; path = "../node_modules/native-base/Fonts/Ionicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		2128FB5876354BF6A4944655 /* MaterialCommunityIcons.ttf */ = {isa = PBXFileReference; name = "MaterialCommunityIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialCommunityIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		91117EBF250843B0B176B563 /* MaterialIcons.ttf */ = {isa = PBXFileReference; name = "MaterialIcons.ttf"; path = "../node_modules/native-base/Fonts/MaterialIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		E60EFA8EB4684631BA2AE080 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../node_modules/native-base/Fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		84AE777393D441F78A1CCD59 /* Roboto_medium.ttf */ = {isa = PBXFileReference; name = "Roboto_medium.ttf"; path = "../node_modules/native-base/Fonts/Roboto_medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		739C8103A3344D43A0236FD5 /* Roboto.ttf */ = {isa = PBXFileReference; name = "Roboto.ttf"; path = "../node_modules/native-base/Fonts/Roboto.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		6050D1FB8AD44A4C89BA5319 /* rubicon-icon-font.ttf */ = {isa = PBXFileReference; name = "rubicon-icon-font.ttf"; path = "../node_modules/native-base/Fonts/rubicon-icon-font.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		63A422DB44D54773B0EF4592 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../node_modules/native-base/Fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		BEE1C10C2FD148C79D5B1D58 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../node_modules/native-base/Fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FD8351C15069473CAB59E8D6 /* Fontisto.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = Fontisto.ttf; path = "../node_modules/native-base/Fonts/Fontisto.ttf"; sourceTree = "<group>"; };
+		FE962C0C10EE68313817C565 /* libPods-vaccinepassport.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-vaccinepassport.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0C5C6A53E832ED63BC7AC1B /* libPods-vaccinepassport-vaccinepassportTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -88,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				06723C7150CBB1BDF6EC4B00 /* libPods-vaccinepassport.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -128,8 +138,22 @@
 			isa = PBXGroup;
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
+				FE962C0C10EE68313817C565 /* libPods-vaccinepassport.a */,
+				2B821E1DEF9034419F26144C /* libPods-vaccinepassport-vaccinepassportTests.a */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		681638E15FFC5E50863AC03B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D13B7050EAA0B43539B85B49 /* Pods-vaccinepassport.debug.xcconfig */,
+				BD420DF473C530F4783A1DD6 /* Pods-vaccinepassport.release.xcconfig */,
+				65F3894E73589FC8178F2B35 /* Pods-vaccinepassport-vaccinepassportTests.debug.xcconfig */,
+				97B43D375C646C895B90C29E /* Pods-vaccinepassport-vaccinepassportTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
@@ -148,6 +172,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				DB0B238F2AC347B6AF526474 /* Resources */,
+				681638E15FFC5E50863AC03B /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -164,7 +189,7 @@
 			sourceTree = "<group>";
 		};
 		DB0B238F2AC347B6AF526474 /* Resources */ = {
-			isa = "PBXGroup";
+			isa = PBXGroup;
 			children = (
 				905E2E21AB104FC0AB82EACD /* AntDesign.ttf */,
 				39D1C3956F194D0E898B8EF9 /* Entypo.ttf */,
@@ -187,8 +212,8 @@
 				BEE1C10C2FD148C79D5B1D58 /* Zocial.ttf */,
 			);
 			name = Resources;
-			sourceTree = "<group>";
 			path = "";
+			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
@@ -197,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "vaccinepassportTests" */;
 			buildPhases = (
+				68F3D3E4CC7366830829DD6C /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
+				F20376F3C53B279756411191 /* [CP] Embed Pods Frameworks */,
+				E2A35C37E977FA97886DD742 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -215,11 +243,14 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "vaccinepassport" */;
 			buildPhases = (
+				3CBD0CC27589B771A5E3DA1B /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				5C3A6B3F6A84A978F76565B6 /* [CP] Embed Pods Frameworks */,
+				F26876069366158DD37C6FB2 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -319,6 +350,118 @@
 			shellPath = /bin/sh;
 			shellScript = "set -e\n\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
+		3CBD0CC27589B771A5E3DA1B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vaccinepassport-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5C3A6B3F6A84A978F76565B6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68F3D3E4CC7366830829DD6C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-vaccinepassport-vaccinepassportTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A35C37E977FA97886DD742 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F20376F3C53B279756411191 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport-vaccinepassportTests/Pods-vaccinepassport-vaccinepassportTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F26876069366158DD37C6FB2 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-vaccinepassport/Pods-vaccinepassport-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -371,6 +514,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 65F3894E73589FC8178F2B35 /* Pods-vaccinepassport-vaccinepassportTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -397,6 +541,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 97B43D375C646C895B90C29E /* Pods-vaccinepassport-vaccinepassportTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -420,6 +565,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D13B7050EAA0B43539B85B49 /* Pods-vaccinepassport.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -445,6 +591,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD420DF473C530F4783A1DD6 /* Pods-vaccinepassport.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -499,6 +646,7 @@
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -563,6 +711,7 @@
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = "arm64 ";
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;

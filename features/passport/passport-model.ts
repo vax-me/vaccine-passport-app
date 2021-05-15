@@ -1,5 +1,3 @@
-
-
 export type PassportID = string;
 
 export interface Birthday {
@@ -25,7 +23,6 @@ export type PrivateKey = string;
 export type Manufacturer = string;
 export type VaccineType = string;
 
-
 export interface RequestPassportRequest {
   name: string;
   birthday: Birthday;
@@ -33,8 +30,19 @@ export interface RequestPassportRequest {
 }
 
 export interface SignPassportRequest {
-  "type": VaccineType
-  "lot_no": string
-  "manufacturer": Manufacturer
-  "dose_no": number
+  type: VaccineType;
+  lot_no: string;
+  manufacturer: Manufacturer;
+  dose_no: number;
+}
+
+export interface InvalidPassport {
+  passport_id: string;
+  unix_timestamp: number;
+}
+
+export interface EncryptedPassport {
+  base_64_encrypted_aes_key: string;
+  base_64_data: string;
+  base_64_nonce: string;
 }

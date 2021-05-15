@@ -6,36 +6,34 @@
  * @flow strict-local
  */
 
-import React, { useEffect, useState } from "react";
-import { createStackNavigator } from "@react-navigation/stack"
-import { Root, Spinner } from "native-base";
-import SplashScreenView from "./views/SplashScreenView";
-import { NavigationContainer } from "@react-navigation/native";
-import RequestPassportView from "./views/RequestPassportView";
-import QRCodeView from "./views/QRCodeView";
-
+import React, {useEffect, useState} from 'react';
+import {createStackNavigator} from '@react-navigation/stack';
+import {Root, Spinner} from 'native-base';
+import SplashScreenView from './views/SplashScreenView';
+import {NavigationContainer} from '@react-navigation/native';
+import RequestPassportView from './views/RequestPassportView';
+import QRCodeView from './views/QRCodeView';
+import {PassportService} from './features/passport/passport-service';
 
 const Stack = createStackNavigator();
 
 const AppLoading = () => {
-  return <Spinner />
+  return <Spinner />;
 };
 
 function sleep(ms: number) {
   return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-
-const loadDependencies = async() => {
+const loadDependencies = async () => {
   await sleep(1000);
-}
-
+};
 
 const App = () => {
   const [loading, setLoading] = useState(true);
   useEffect(() => {
     if (loading) {
-        loadDependencies().then(() => setLoading(false))
+      loadDependencies().then(() => setLoading(false));
     }
   });
   if (loading) {
@@ -44,18 +42,21 @@ const App = () => {
   return (
     <Root>
       <NavigationContainer>
-        <Stack.Navigator initialRouteName={"Splashscreen"} screenOptions={{
-          headerShown: false
-        }}>
-          <Stack.Screen name={"Splashscreen"} component={SplashScreenView} />
-          <Stack.Screen name={"RequestPassport"} component={RequestPassportView} />
-          <Stack.Screen name={"PassportDetail"} component={QRCodeView} />
+        <Stack.Navigator
+          initialRouteName={'Splashscreen'}
+          screenOptions={{
+            headerShown: false,
+          }}>
+          <Stack.Screen name={'Splashscreen'} component={SplashScreenView} />
+          <Stack.Screen
+            name={'RequestPassport'}
+            component={RequestPassportView}
+          />
+          <Stack.Screen name={'PassportDetail'} component={QRCodeView} />
         </Stack.Navigator>
       </NavigationContainer>
     </Root>
   );
-
 };
-
 
 export default App;
