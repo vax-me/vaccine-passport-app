@@ -1,27 +1,26 @@
-import React, { useState } from "react";
-import { Accordion, Button, Container, Content, Header, List, ListItem, Text } from "native-base";
+import React, { useEffect, useState } from "react";
+import { Button, Container, Content, Header, List, ListItem, Text } from "native-base";
 import CustomHeader from "../components/Header";
-
-const passports = [{
-  title: "COVIDPfizer1",
-  id: "DEBUG_ID",
-  content: "Content"
-},{
-  title: "COVIDPfizer2",
-  id: "ID-1",
-  content: "Content"
-}, {
-  title: "GSK Tetanus",
-  id: "ID-3",
-  content: "Content"
-}]
-
+import { Passport } from "../features/passport/passport-model";
+import { Storage } from "../features/storage/storage";
 
 const SplashScreenView = ({navigation}: any) => {
+  const [passports, setPassports] = useState<Passport[] | null>(null);
+
+  useEffect(() => {
+    if (passports == null) {
+      Storage.listPassports().then(passports => setPassports(passports))
+    }
+  }, []);
+
+  if (passports == null) {
+    return <Text>Loading</Text>;
+  }
+
   const items = passports.map((pass) => (
-    <ListItem key={pass.title} onPress={() => navigation.navigate('PassportDetail', {passportID: pass.id})}>
+    <ListItem key={pass.id} onPress={() => navigation.navigate('PassportDetail', {passportID: pass.id})}>
       <Text>
-      {pass.title}
+      {pass.type}
       </Text>
     </ListItem>))
   return (

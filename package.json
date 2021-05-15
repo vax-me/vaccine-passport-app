@@ -10,7 +10,6 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/native": "^5.9.4",
     "@react-navigation/stack": "^5.14.4",
@@ -20,6 +19,7 @@
     "react": "17.0.1",
     "react-hook-form": "^7.1.1",
     "react-native": "0.64.0",
+    "react-native-encrypted-storage": "^4.0.2",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-qrcode-svg": "^6.1.1",
     "react-native-reanimated": "^2.1.0",

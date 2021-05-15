@@ -23,11 +23,6 @@ const AppLoading = () => {
   return <Spinner />
 };
 
-function sleep(ms: number) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
-
-
 const loadDependencies = async() => {
   const debugPassport: Passport = {
     private_key: "",
@@ -44,7 +39,8 @@ const loadDependencies = async() => {
     public_key: "PUBKEY",
     type: "Anti Chip"
   }
-  Storage.addPassport(debugPassport);
+  // Uncomment this to get debug passport in App
+  // await Storage.addPassport(debugPassport);
 }
 
 
