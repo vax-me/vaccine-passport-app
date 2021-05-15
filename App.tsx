@@ -12,6 +12,7 @@ import { Root, Spinner } from "native-base";
 import SplashScreenView from "./views/SplashScreenView";
 import { NavigationContainer } from "@react-navigation/native";
 import RequestPassportView from "./views/RequestPassportView";
+import QRCodeView from "./views/QRCodeView";
 
 
 const Stack = createStackNavigator();
@@ -48,6 +49,7 @@ const App = () => {
         }}>
           <Stack.Screen name={"Splashscreen"} component={SplashScreenView} />
           <Stack.Screen name={"RequestPassport"} component={RequestPassportView} />
+          <Stack.Screen name={"PassportDetail"} component={QRCodeView} />
         </Stack.Navigator>
       </NavigationContainer>
     </Root>

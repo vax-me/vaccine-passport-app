@@ -4,19 +4,22 @@ import CustomHeader from "../components/Header";
 
 const passports = [{
   title: "COVIDPfizer1",
+  id: "DEBUG_ID",
   content: "Content"
 },{
   title: "COVIDPfizer2",
+  id: "ID-1",
   content: "Content"
 }, {
   title: "GSK Tetanus",
+  id: "ID-3",
   content: "Content"
 }]
 
 
 const SplashScreenView = ({navigation}: any) => {
   const items = passports.map((pass) => (
-    <ListItem key={pass.title}>
+    <ListItem key={pass.title} onPress={() => navigation.navigate('PassportDetail', {passportID: pass.id})}>
       <Text>
       {pass.title}
       </Text>

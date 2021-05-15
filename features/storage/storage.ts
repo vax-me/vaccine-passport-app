@@ -1,24 +1,39 @@
 //./storage.js
 import AsyncStorage from "@react-native-community/async-storage";
+import { Passport, PassportID } from "../passport/passport-model";
 
-export enum StorageKeys {
-  PUBLIC_KEY = "PASSPORT_PUBKEY",
-  PRIVATE_KEY = "PASSPORT_PRIVATEKEY",
-  PASSPORT = "PASSPORT_PASSPORT"
+
+const debugPassport: Passport = {
+  birthdhay: {
+    day: 10,
+    month: 1,
+    year: 2001
+  },
+  dose_no: 1,
+  first_name: "Test",
+  id: "DEBUG_ID",
+  last_name: "Person",
+  lot_no: "134A",
+  manufacturer: "Fitzer Safe",
+  public_key: "PUBKEY",
+  type: "Anti Chip"
 }
 
 export class Storage {
-  static getItem = async (key: StorageKeys)  => {
-    let item = await AsyncStorage.getItem(key);
-    //You'd want to error check for failed JSON parsing...
-    return item;
+
+  static addPassport = async (passport: Passport) => {
+    await AsyncStorage.setItem(passport.id, JSON.stringify(passport))
   }
 
-  static setItem = async (key: StorageKeys, value: string) => {
-    return await AsyncStorage.setItem(key, value);
+  static getPassport = async (id: PassportID): Promise<Passport> => {
+    if (id == "DEBUG_ID") {
+      return debugPassport
+    }
+    const passportString = await AsyncStorage.getItem(id);
+    if (passportString == null) {
+      throw Error("No passport with specified id ${id}.")
+    }
+    return JSON.parse(passportString);
   }
 
-  static removeItem = async(key: StorageKeys) => {
-    return await AsyncStorage.removeItem(key);
-  }
 }
