@@ -12,6 +12,6 @@ export const PassportDetail: React.FC<Props> = ({passport}: Props) => {
   return <Card>
     <Text>Name: {passport.name}</Text>
     <Text>Vaccine Type: {passport.type}</Text>
-    <Birthday birthday={passport.birthday}></Birthday>
+    <Birthday birthday={passport.birth_date}></Birthday>
   </Card>
 }

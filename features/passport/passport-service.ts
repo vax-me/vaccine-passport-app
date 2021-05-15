@@ -4,9 +4,9 @@ import {
   EncryptedPassport,
   InvalidPassport,
   Passport,
-  PassportID,
-  RequestPassportRequest,
-} from './passport-model';
+  PassportID, RequestedPassport,
+  RequestPassportRequest
+} from "./passport-model";
 import {LoggingService} from './logging-service';
 
 export class PassportService {
@@ -21,10 +21,10 @@ export class PassportService {
     return PassportService.instance;
   }
 
-  async requestPassport(request: RequestPassportRequest): Promise<Passport> {
+  async requestPassport(request: RequestPassportRequest): Promise<PassportID> {
     try {
       const response = await axios.post(BASE_URL + REQ_PASSPORT, request);
-      return response.data;
+      return response.data.id;
     } catch (error) {
       throw new Error(this.handleError(error));
     }
@@ -50,7 +50,7 @@ export class PassportService {
 
   handleError(error: any): string {
     if (__DEV__) {
-      console.error(error);
+      console.error(JSON.stringify(error));
     }
     LoggingService.info(error);
     if (error.response) {
@@ -64,7 +64,7 @@ export class PassportService {
         return `There server ran into unknown trouble (${response.status}). Please try again later`;
       }
     } else if (error.request) {
-      return 'Could not send request';
+      return `Could not send request`;
     }
     return 'A completely unexpected an unknown error occurred.';
   }

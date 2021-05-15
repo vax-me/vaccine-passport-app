@@ -12,7 +12,6 @@ target 'vaccinepassport' do
     :hermes_enabled => false
   )
 
-  pod 'react-native-simple-crypto', :path => '../node_modules/react-native-simple-crypto'
 
   target 'vaccinepassportTests' do
     inherit! :complete

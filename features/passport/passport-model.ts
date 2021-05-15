@@ -11,7 +11,7 @@ export interface RequestedPassport {
   name: string;
   public_key: PublicKey;
   private_key: PrivateKey;
-  birthday: Birthday;
+  birth_date: Birthday;
 }
 
 export interface Passport extends RequestedPassport {
@@ -28,7 +28,7 @@ export type VaccineType = string;
 
 export interface RequestPassportRequest {
   name: string;
-  birthday: Birthday;
+  birth_date: Birthday;
   public_key: PublicKey;
 }
 

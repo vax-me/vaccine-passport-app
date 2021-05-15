@@ -1,10 +1,10 @@
-import { RSA } from "react-native-simple-crypto";
+import RNSCrypto from "react-native-simple-crypto";
 
 
 class EncryptionService {
 
   async generateKey() {
-    return RSA.generateKeys(2048)
+    return RNSCrypto.RSA.generateKeys(2048)
   }
 }
 

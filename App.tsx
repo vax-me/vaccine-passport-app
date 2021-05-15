@@ -25,7 +25,7 @@ const AppLoading = () => {
 const loadDependencies = async () => {
   const debugPassport: Passport = {
     private_key: '',
-    birthday: {
+    birth_date: {
       day: 10,
       month: 1,
       year: 2001,
@@ -40,6 +40,9 @@ const loadDependencies = async () => {
   };
   // Uncomment this to get debug passport in App
   // await Storage.addPassport(debugPassport);
+  if (__DEV__) {
+    console.log("Running in Debug Mode")
+  }
 };
 
 const App = () => {

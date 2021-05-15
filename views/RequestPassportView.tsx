@@ -14,10 +14,10 @@ const onSubmit = async (data: any) => {
   const service = PassportService.getInstance();
   const request: RequestPassportRequest = {
     name: data.name, public_key: keypair.public,
-    birthday: { day: 0, month: 0, year: 0 }
+    birth_date: { day: 0, month: 0, year: 0 }
   }
-  const passport = await service.requestPassport(request)
-  await Storage.addPassport({...passport, private_key: keypair.private});
+  const passportID = await service.requestPassport(request)
+  await Storage.addRequestedPassport({...request, id: passportID, private_key: keypair.private});
 }
 
 export const RequestPassportView = () => {
