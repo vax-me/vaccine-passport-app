@@ -14,20 +14,20 @@ export interface Passport {
   manufacturer: Manufacturer;
   dose_no: number;
   lot_no: string;
-  first_name: string;
-  last_name: string;
+  name: string;
   public_key: PublicKey;
-  birthdhay: Birthday;
+  private_key: PrivateKey;
+  birthday: Birthday;
 }
 
 export type PublicKey = string;
+export type PrivateKey = string;
 export type Manufacturer = string;
 export type VaccineType = string;
 
 
 export interface RequestPassportRequest {
-  first_name: string;
-  last_name: string;
+  name: string;
   birthday: Birthday;
   public_key: PublicKey;
 }

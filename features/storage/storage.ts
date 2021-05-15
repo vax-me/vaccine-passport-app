@@ -4,15 +4,15 @@ import { Passport, PassportID } from "../passport/passport-model";
 
 
 const debugPassport: Passport = {
-  birthdhay: {
+  private_key: "",
+  birthday: {
     day: 10,
     month: 1,
     year: 2001
   },
   dose_no: 1,
-  first_name: "Test",
+  name: "Test",
   id: "DEBUG_ID",
-  last_name: "Person",
   lot_no: "134A",
   manufacturer: "Fitzer Safe",
   public_key: "PUBKEY",

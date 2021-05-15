@@ -7,14 +7,11 @@ interface Props {
   passport: Passport;
 }
 
-
-
 export const PassportDetail: React.FC<Props> = ({passport}: Props) => {
 
   return <Card>
-    <Text>First Name: {passport.first_name}</Text>
-    <Text>Last Name: {passport.last_name}</Text>
+    <Text>Name: {passport.name}</Text>
     <Text>Vaccine Type: {passport.type}</Text>
-    <Birthday birthday={passport.birthdhay}></Birthday>
+    <Birthday birthday={passport.birthday}></Birthday>
   </Card>
 }

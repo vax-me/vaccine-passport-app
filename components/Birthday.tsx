@@ -1,10 +1,15 @@
 import { Text } from "native-base";
 import React from "react";
+import { Birthday } from "../features/passport/passport-model";
 
-const Birthday = ({birthday}: { birthday: Birthday }) => {
+interface Props {
+  birthday: Birthday;
+}
+
+const BirthdayView: React.FC<Props> = ({birthday}) => {
   return (
     <Text>{birthday.month}/{birthday.day}/{birthday.year}</Text>
   );
 }
 
-export default Birthday;
+export default BirthdayView;

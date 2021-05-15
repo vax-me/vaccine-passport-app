@@ -16,13 +16,13 @@ export class PassportService {
     return PassportService.instance
   }
 
-  async requestPassport(request: RequestPassportRequest): Promise<PassportID> {
+  async requestPassport(request: RequestPassportRequest): Promise<Passport> {
     try {
       const response = await axios.post(BASE_URL + REQ_PASSPORT, request)
-      return response.data.id;
+      return response.data;
     } catch (error) {
       console.error(error)
-      return "";
+      throw error("Could not send passport to backend")
     }
   }
 
