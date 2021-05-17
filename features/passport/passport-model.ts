@@ -49,3 +49,9 @@ export interface EncryptedPassport {
   base_64_data: string;
   base_64_nonce: string;
 }
+
+export interface SignedVaccinePassport {
+  encoded_data_base_64: string;
+  timestamp: number;
+  signature_base_64: string;
+}
