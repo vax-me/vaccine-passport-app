@@ -1,13 +1,8 @@
-import {configLoggerType, fileAsyncTransport, logger} from 'react-native-logs';
-import RNFS from 'react-native-fs';
+import {configLoggerType, consoleTransport, logger} from 'react-native-logs';
 
 const defaultConfig: configLoggerType = {
   severity: 'debug',
-  transport: fileAsyncTransport,
-  transportOptions: {
-    FS: RNFS,
-    fileName: `log.txt`,
-  },
+  transport: consoleTransport,
   levels: {
     debug: 0,
     info: 1,

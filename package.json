@@ -22,7 +22,6 @@
     "react-hook-form": "^7.1.1",
     "react-native": "0.64.1",
     "react-native-encrypted-storage": "^4.0.2",
-    "react-native-fs": "^2.18.0",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-logs": "^3.0.3",
     "react-native-qrcode-svg": "^6.1.1",
